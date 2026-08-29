@@ -28,9 +28,9 @@ export const projects: Project[] = [
     outcome:
       'A working hybrid monitoring foundation with API, PostgreSQL, Kafka and Grafana components in active use, including database health scoring, MySQL performance telemetry and client-workload visibility. AI-assisted analysis and broader automation remain under active development.',
     tags: ['Docker', 'PostgreSQL', 'Kafka', 'Prometheus', 'Grafana', 'REST API', 'AIOps'],
-    image: './projects/ums-ai/architecture.webp',
+    image: './projects/ums-ai/architecture.png',
     gallery: [
-      './projects/ums-ai/architecture.webp',
+      './projects/ums-ai/architecture.png',
       './projects/ums-ai/database-health.webp',
       './projects/ums-ai/mysql-overview.webp',
       './projects/ums-ai/mysql-client-activity.webp',
