@@ -29,6 +29,16 @@ export const projects: Project[] = [
       'A working extensible foundation for a hybrid monitoring platform, with API, database and event-processing components already running and additional observability/AIOps stages under active development.',
     tags: ['Docker', 'PostgreSQL', 'Kafka', 'Prometheus', 'Grafana', 'REST API', 'AIOps'],
     badge: 'Flagship Engineering Project',
+    status: 'Active Development',
+    metrics: ['Vendor-neutral monitoring', 'Dockerized services', 'Kafka event pipeline', 'PostgreSQL metadata', 'Prometheus/Grafana direction', 'AI-assisted analysis'],
+    architecture: ['Servers & Databases', 'Collectors / APIs', 'Kafka Events', 'Processing Services', 'PostgreSQL + Telemetry', 'Grafana / AI Analysis'],
+    stages: [
+      { title: 'Platform Foundation', description: 'Established the Linux/Docker foundation, PostgreSQL metadata store and API service structure.' },
+      { title: 'Resource & CRUD APIs', description: 'Built resource models and APIs for organizations, environments, sites, servers and database instances.' },
+      { title: 'Kafka Event Processing', description: 'Added normalized event streaming and worker services for decoupled processing.' },
+      { title: 'Observability Pipeline', description: 'Extending collection, identity and health pipelines toward Prometheus/Grafana-oriented monitoring.' },
+      { title: 'AI & Kubernetes Roadmap', description: 'Planned AI-assisted operational analysis and a migration path toward Kubernetes deployment.' },
+    ],
     featured: true,
   },
   {
@@ -55,7 +65,10 @@ export const projects: Project[] = [
       './projects/cooperative-platform/coop-architecture.png',
     ],
     badge: 'Product Development',
-    featured: true,
+    status: 'Completed',
+    metrics: ['Mobile + web experience', 'OTP member onboarding', 'Loan workflows', 'Savings & deposits', 'Payment workflows', 'API-backed integration'],
+    architecture: ['Mobile / Web Client', 'Cloud', 'Security Layer', 'Authentication', 'API Services', 'Cooperative Databases'],
+    featured: false,
   },
   {
     id: 'diamonds-parfum',
@@ -83,7 +96,9 @@ export const projects: Project[] = [
     ],
     href: 'https://member.diamondsparfum.com/',
     badge: 'Full Platform',
-    featured: true,
+    status: 'Production',
+    metrics: ['Member + admin portals', 'Genealogy', 'Package & rank logic', 'PV / bonus visibility', 'Withdrawals', 'Reports & settings'],
+    featured: false,
   },
   {
     id: 'cloud-modernization',
@@ -102,6 +117,8 @@ export const projects: Project[] = [
     outcome:
       'Improved repeatability, security and operational visibility for enterprise application delivery across cloud and on-premises environments.',
     tags: ['AWS', 'EC2', 'RDS', 'S3', 'VPC', 'WAF', 'Docker', 'CloudWatch'],
+    status: 'Ongoing',
+    metrics: ['AWS + hybrid', 'Secure private access', 'Containerized delivery', 'CI/CD', 'Monitoring', 'Production operations'],
   },
   {
     id: 'mysql-performance',
@@ -120,6 +137,8 @@ export const projects: Project[] = [
     outcome:
       'Maintained production database continuity while improving troubleshooting depth, backup resilience and modernization readiness.',
     tags: ['MySQL 5.7/8.0', 'AWS RDS', 'InnoDB', 'Replication', 'XtraBackup', 'Performance'],
+    status: 'Ongoing',
+    metrics: ['500GB+ environments', 'Hundreds of concurrent users', 'Replication', 'Backup / PITR readiness', 'Performance tuning', 'RDS modernization'],
   },
   {
     id: 'kubernetes-operations',
@@ -138,5 +157,7 @@ export const projects: Project[] = [
     outcome:
       'Strengthened production troubleshooting and deployment reliability across containerized application environments.',
     tags: ['Kubernetes', 'k0s', 'Docker', 'Harbor', 'Linux', 'CI/CD'],
+    status: 'Ongoing',
+    metrics: ['Multi-node k0s', 'Controller + workers', 'Pod/service troubleshooting', 'Certificates', 'Storage & permissions', 'Image delivery'],
   },
 ]

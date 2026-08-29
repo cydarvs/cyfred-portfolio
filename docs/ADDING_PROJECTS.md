@@ -55,3 +55,28 @@ The project section is data-driven.
   badge: 'Database Engineering',
 },
 ```
+
+## Optional portfolio fields
+
+Projects can also use these optional fields:
+
+```ts
+status: 'Production' | 'Active Development' | 'Completed' | 'Ongoing',
+metrics: [
+  '500GB+ environments',
+  'Multi-node Kubernetes',
+],
+architecture: [
+  'Client',
+  'API',
+  'Event Pipeline',
+  'Database',
+  'Observability',
+],
+stages: [
+  { title: 'Stage 1', description: 'Foundation and platform setup.' },
+  { title: 'Stage 2', description: 'API and event-processing implementation.' },
+],
+```
+
+These fields automatically appear in the project card or case-study modal. No component changes are required.
