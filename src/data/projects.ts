@@ -15,7 +15,7 @@ export const projects: Project[] = [
     title: 'Universal Monitoring System (UMS-AI)',
     kicker: 'Observability · Event Processing · AIOps',
     summary:
-      'A vendor-neutral monitoring and AIOps platform designed to unify health, metrics, logs and operational events from servers, databases and infrastructure across on-premises and cloud environments.',
+      'A vendor-neutral observability and AIOps platform that unifies database, infrastructure and application health across on-premises and cloud environments, with working Grafana dashboards for health, performance and client-workload analysis.',
     challenge:
       'Operational visibility is commonly fragmented across database tools, cloud consoles and server-specific monitoring. UMS-AI is being designed as one extensible platform that normalizes telemetry and creates a foundation for AI-assisted operational analysis.',
     contribution: [
@@ -26,12 +26,19 @@ export const projects: Project[] = [
       'Defined a deployment path from single-host containers toward Kubernetes-based operation.',
     ],
     outcome:
-      'A working extensible foundation for a hybrid monitoring platform, with API, database and event-processing components already running and additional observability/AIOps stages under active development.',
+      'A working hybrid monitoring foundation with API, PostgreSQL, Kafka and Grafana components in active use, including database health scoring, MySQL performance telemetry and client-workload visibility. AI-assisted analysis and broader automation remain under active development.',
     tags: ['Docker', 'PostgreSQL', 'Kafka', 'Prometheus', 'Grafana', 'REST API', 'AIOps'],
+    image: './projects/ums-ai/architecture.webp',
+    gallery: [
+      './projects/ums-ai/architecture.webp',
+      './projects/ums-ai/database-health.webp',
+      './projects/ums-ai/mysql-overview.webp',
+      './projects/ums-ai/mysql-client-activity.webp',
+    ],
     badge: 'Flagship Engineering Project',
     status: 'Active Development',
-    metrics: ['Vendor-neutral monitoring', 'Dockerized services', 'Kafka event pipeline', 'PostgreSQL metadata', 'Prometheus/Grafana direction', 'AI-assisted analysis'],
-    architecture: ['Servers & Databases', 'Collectors / APIs', 'Kafka Events', 'Processing Services', 'PostgreSQL + Telemetry', 'Grafana / AI Analysis'],
+    metrics: ['Grafana health scoring', 'MySQL workload visibility', 'Client activity analysis', 'Dockerized services', 'Kafka event pipeline', 'AI-assisted analysis'],
+    architecture: ['Data Sources', 'Collectors / Exporters', 'Prometheus + PostgreSQL', 'FastAPI Services', 'Grafana Observability', 'AI / Actions'],
     stages: [
       { title: 'Platform Foundation', description: 'Established the Linux/Docker foundation, PostgreSQL metadata store and API service structure.' },
       { title: 'Resource & CRUD APIs', description: 'Built resource models and APIs for organizations, environments, sites, servers and database instances.' },

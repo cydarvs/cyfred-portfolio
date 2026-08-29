@@ -30,16 +30,26 @@ export function ProjectModal({ project, onClose }: { project: Project; onClose: 
         </div>
 
         {project.gallery?.length ? (
-          <div className="grid border-b border-slate-800 md:grid-cols-2">
-            {project.gallery.slice(0, 4).map((img, index) => (
-              <img
-                key={img}
-                src={img}
-                alt={`${project.title} screenshot ${index + 1}`}
-                loading="lazy"
-                className="h-72 w-full object-cover object-top"
-              />
-            ))}
+          <div className="border-b border-slate-800 bg-[#050b13]">
+            <img
+              src={project.gallery[0]}
+              alt={`${project.title} architecture or primary project view`}
+              loading="eager"
+              className="max-h-[720px] w-full object-contain"
+            />
+            {project.gallery.length > 1 && (
+              <div className="grid border-t border-slate-800 md:grid-cols-3">
+                {project.gallery.slice(1, 4).map((img, index) => (
+                  <img
+                    key={img}
+                    src={img}
+                    alt={`${project.title} dashboard screenshot ${index + 1}`}
+                    loading="lazy"
+                    className="h-72 w-full border-slate-800 object-cover object-top md:border-r last:md:border-r-0"
+                  />
+                ))}
+              </div>
+            )}
           </div>
         ) : null}
 
