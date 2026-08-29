@@ -28,9 +28,9 @@ export const projects: Project[] = [
     outcome:
       'A working hybrid monitoring foundation with API, PostgreSQL, Kafka and Grafana components in active use, including database health scoring, MySQL performance telemetry and client-workload visibility. AI-assisted analysis and broader automation remain under active development.',
     tags: ['Docker', 'PostgreSQL', 'Kafka', 'Prometheus', 'Grafana', 'REST API', 'AIOps'],
-    image: './projects/ums-ai/architecture.png',
+    image: './projects/ums-ai/architecture.webp',
     gallery: [
-      './projects/ums-ai/architecture.png',
+      './projects/ums-ai/architecture.webp',
       './projects/ums-ai/database-health.webp',
       './projects/ums-ai/mysql-overview.webp',
       './projects/ums-ai/mysql-client-activity.webp',
@@ -47,6 +47,109 @@ export const projects: Project[] = [
       { title: 'AI & Kubernetes Roadmap', description: 'Planned AI-assisted operational analysis and a migration path toward Kubernetes deployment.' },
     ],
     featured: true,
+  },
+  {
+    id: 'pmm3',
+    title: 'PMM 3 — Enterprise Database Monitoring',
+    kicker: 'Database Observability · Performance Engineering · Hybrid Cloud',
+
+    summary:
+      'Implemented and upgraded a centralized Percona Monitoring and Management (PMM 3) platform for database and infrastructure observability across on-premises and AWS RDS environments.',
+
+    challenge:
+      'Database monitoring was distributed across multiple environments and database platforms. The goal was to establish centralized visibility for database health, query performance, infrastructure utilization, capacity, and operational troubleshooting across both on-premises and cloud-managed databases.',
+
+    contribution: [
+      'Upgraded the database monitoring platform from PMM 2 to PMM 3.',
+      'Deployed and administered the centralized PMM server platform.',
+      'Registered and configured PMM clients, agents, and exporters.',
+      'Integrated on-premises MySQL and PostgreSQL database environments.',
+      'Integrated AWS RDS for MySQL and PostgreSQL instances.',
+      'Configured MySQL performance, InnoDB, connection, and workload monitoring.',
+      'Configured PostgreSQL performance and connection monitoring.',
+      'Implemented operating-system monitoring for CPU, memory, disk, network, and node health.',
+      'Enabled Query Analytics (QAN) for database workload and query-performance investigation.',
+      'Troubleshot exporter permissions, agent connectivity, authentication, and slow-query monitoring.',
+    ],
+
+    outcome:
+      'Delivered a centralized hybrid database observability platform providing database health, performance, query analytics, infrastructure utilization, and capacity visibility across on-premises and AWS RDS environments.',
+
+    tags: [
+      'PMM 3',
+      'Percona',
+      'MySQL',
+      'PostgreSQL',
+      'AWS RDS',
+      'Docker',
+      'Linux',
+      'Prometheus',
+      'Grafana',
+      'QAN',
+    ],
+
+    image: './projects/pmm3/architecture.webp',
+
+    gallery: [
+      './projects/pmm3/architecture.webp',
+      './projects/pmm3/pmm-overview.webp',
+      './projects/pmm3/mysql-overview.webp',
+      './projects/pmm3/mysql-summary.webp',
+      './projects/pmm3/mysql-innodb.webp',
+      './projects/pmm3/postgresql-summary.webp',
+      './projects/pmm3/os-overview.webp',
+      './projects/pmm3/query-analytics.webp',
+    ],
+
+    badge: 'Database Observability',
+
+    status: 'Completed',
+
+    metrics: [
+      'Hybrid DB monitoring',
+      'MySQL & PostgreSQL',
+      'AWS RDS integration',
+      'Query Analytics',
+      'OS monitoring',
+      'Performance diagnostics',
+    ],
+
+    architecture: [
+      'On-Prem MySQL / PostgreSQL',
+      'AWS RDS MySQL / PostgreSQL',
+      'PMM Agents & Exporters',
+      'PMM 3 Server',
+      'Metrics & Query Analytics',
+      'Dashboards & Alerts',
+    ],
+
+    stages: [
+      {
+        title: 'PMM Platform Upgrade',
+        description:
+          'Upgraded the existing monitoring platform from PMM 2 to PMM 3 while preserving database observability capabilities.',
+      },
+      {
+        title: 'Database Integration',
+        description:
+          'Integrated on-premises MySQL and PostgreSQL together with AWS RDS MySQL and PostgreSQL environments.',
+      },
+      {
+        title: 'Infrastructure Observability',
+        description:
+          'Configured node-level monitoring covering CPU, memory, storage, network, uptime, and operating-system performance.',
+      },
+      {
+        title: 'Database Performance Monitoring',
+        description:
+          'Established MySQL, InnoDB, PostgreSQL, connection, workload, and database-performance visibility.',
+      },
+      {
+        title: 'Query Analytics',
+        description:
+          'Enabled query-level workload analysis to identify expensive queries, workload concentration, latency, and optimization opportunities.',
+      },
+    ],
   },
   {
     id: 'cooperative-platform',
